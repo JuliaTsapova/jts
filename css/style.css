@@ -18,6 +18,12 @@ html {
   img {
     max-width: 100%;
     height: auto; }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
   
   .visually-hidden {
     position: absolute;
@@ -58,11 +64,9 @@ html {
 
     .multilink {
         margin: 0 auto;
-        padding: 0;
         max-width: 80%;
         padding-top: 70%;
         padding-bottom: 36%;
-        list-style: none;
         /* max-width: 1080px; */
     }
 
@@ -110,6 +114,82 @@ html {
         border: 1px solid #8e6f48;
     }
 
+    /* --- */
+
+    .about-me {
+        padding: 0 30px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .free {
+        padding: 0 30px;
+    }
+
+    .services {
+        padding: 0 30px;
+    }
+
+    .free__list li {
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .services__list li {
+        position: relative;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .free h2, .services h2 {
+        font-style: 24px;
+    }
+
+    .free h3, .services h3 {
+        font-size: 34px;
+    text-align: center;
+    color: #866f67;
+    }
+
+    .btn {
+        display: block;
+    background-color: #c7b3ab;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #4c3a34;
+    padding: 8px 4px;
+    width: 154px;
+    position: absolute;
+    bottom: -12px;
+    /* font-weight: 700; */
+    left: calc(50% - 77px);
+    border-radius: 3px;
+    letter-spacing: .05em;
+    text-decoration: none;
+    font-size: 18px;
+    }
+
+    .about-me {
+        margin-top: 40px;
+    }
+
+    .about-me h1 {
+        position: relative;
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .about-me h1::after {
+        content: "";
+        position: absolute;
+        width: 122px;
+        height: 2px;
+        background-color: #a6928c;
+        left: calc(50% - 61px);
+        bottom: -8px;
+    }
+
     @media (min-width: 768px) {
         .wr-multilink {
           font-size: 32px;  
@@ -130,5 +210,60 @@ html {
 
         .multilink .insta {
             margin-bottom: 65px;
+        }
+
+        .about-me {
+            max-width: 1040px;
+        margin: 0 auto;
+        display: flex;
+         margin-top: 40px;   
+        }
+
+        .about-me img {
+            width: 364px;
+        }
+
+        .free {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .free img {
+            max-width: 320px;
+            
+        }
+
+        .free__list li:not(:last-of-type) {
+            margin-right: 30px;
+        }
+
+        .services {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .services img {
+            max-width: 400px;
+        }
+
+        .services__list li:not(:last-of-type) {
+            margin-right: 40px;
+        }
+
+        .services__list li {
+            width: 50%;
+            align-items: flex-end;
+        }
+
+        .services__list li:last-of-type {
+            align-self: flex-end;
+        }
+
+        .about-me__info {
+            margin-left: 56px;
+        }
+
+        .free__list, .services__list {
+            display: flex;
         }
     }
