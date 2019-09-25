@@ -215,6 +215,8 @@ html {
         .about-me {
             max-width: 1040px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
          margin-top: 40px;   
         }
@@ -252,11 +254,14 @@ html {
 
         .services__list li {
             width: 50%;
-            align-items: flex-end;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
         }
 
         .services__list li:last-of-type {
-            align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end;
         }
 
         .about-me__info {
@@ -264,6 +269,8 @@ html {
         }
 
         .free__list, .services__list {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
         }
     }
