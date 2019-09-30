@@ -6,77 +6,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body>
-        <!-- <header>
-            <nav>
-                <ul>
-                    <li>
-                        <button class="main-nav__toggle" type="button">
-                            <span class="visually-hidden">Открыть меню</span>
-                        </button>
-                    </li>
-                    <li><a href="https://instagram.com/julie_tsapova">@julie_tsapova</a></li>
-                    <li><a href="#">Бесплатно</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-        </header> -->
         <body>
+            <div class="about-me-wr">
             <section class="about-me">
-                <img src="img/jul1.jpg" alt="Юлия Цапова">
+                <img src="img/jul11.jpg" alt="Юлия Цапова">
                 <div class="about-me__info">
                 <h1>Юлия Цапова</h1>
                 <p>Два года назад я решила получить современную профессию и зарабатывать удаленно. Было сложно, я совершила кучу ошибок, но главное - мне удалось!</p>
                 <p>Сейчас я занимаюсь программированием на фрилансе и развиваю свой бизнес - IT-школу для детей.
                 <p>Я помогу тебе быстро начать зарабатывать в интернете и не совершить типичных ошибок новичка.</p>
             </div>
+            
             </section>
+            <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                    </svg>
+                    </div>
+        </div>
             <section class="free">
-                <h3>Бесплатно</h3>
+                <h3 class="block-title">Бесплатно</h3>
                 <ul class="free__list">
                     <li>
-                        <h2>Чек-лист "Как оформить профиль на фриланс-бирже"</h2>
-                        <!-- <img src="img/fr1.jpg" alt="Чек-лист Как оформить профиль на фриланс-бирже"> -->
-                        <img src="https://via.placeholder.com/320x480" alt="Чек-лист Как оформить профиль на фриланс-бирже">
-                        <button class="btn" type="button">Скачать</button>
+                        <a href="free.html"><h2>Чек-лист</h2><h3>Как оформить профиль на фриланс-бирже</h3></a>
                     </li>
                     <li>
-                        <h2>Сборник советов начинающему фрилансеру</h2>
-                        <!-- <img src="img/fr2.jpg" alt="Сборник советов начинающему фрилансеру"> -->
-                        <img src="https://via.placeholder.com/320x480" alt="Сборник советов начинающему фрилансеру">
-                        <button class="btn" type="button">Скачать</button>
+                        <a href="free.html"><h2>Сборник</h2><h3>Советы начинающему фрилансеру</h3></a>
                     </li>
                     <li>
-                        <h2>Список-сравнение "10 востребованных интернет-профессий"</h2>
-                        <!-- <img src="img/fr3.jpg" alt="Список-сравнение 10 востребованных интернет-профессий"> -->
-                        <img src="https://via.placeholder.com/320x480" alt="Список-сравнение 10 востребованных интернет-профессий">
-                        <button class="btn" type="button">Скачать</button>
+                        <a href="free.html"><h2>Сравнение</h2><h3>ТОП 10 интернет-профессий</h3></a>
                     </li>    
                 </ul>
+                <a class="btn" href="free.html"><span>Подробнее</span></a>
             </section>
-            <section class="services">
-                <h3>Для твоего старта</h3>
+            <div class="services-wr">
+                <section class="services">
+                <h3 class="block-title">Для твоего старта</h3>
                 <ul class="services__list">
                     <li>
-                        <h2>Консультация-сопровождение "С нуля до первого заказа на фрилансе"</h2>
-                        <!-- Консультация-сопровождение "Быстрый старт на фрилансе" -->
+                        <h2>Консультация-сопровождение</h2><h3>С нуля до первого заказа на фрилансе</h3>
                         <img src="img/usl1.jpg" alt="Консультация-сопровождение С нуля до первого заказа на фрилансе">
-                        <a class="btn" href="#">Скоро</a>
+                        <a class="btn" href="#"><span>Скоро</span></a>
                     </li>
                     <li>
-                        <h2>Метод заработка на фрилансе без навыков</h2>
+                        <h2>Метод заработка на фрилансе</h2><h3>Без навыков в какой-либо сфере</h3>
                         <img src="img/usl2.jpg" alt="Метод заработка на фрилансе без навыков">
-                        <a class="btn" href="#">Скоро</a>
+                        <a class="btn" href="#"><span>Скоро</span></a>
                     </li>
                 </ul>
             </section>
+            </div>
             <section>
 
             </section>
         </body>
         <footer>
-
+            <ul class="contacts">
+                <li class="contacts__instagram">
+                    <a class="contacts__instagram--link" href="https://www.instagram.com/julie_tsapova/">@julie_tsapova</a>
+                </li>
+                <li class="contacts__whatsapp">
+                    <a class="contacts__whatsapp--link" href="whatsapp://send?phone=+79089595934">WhatsApp</a>
+                </li>
+                <li class="contacts__viber">
+                    <a class="contacts__viber--link" href="viber://chat?number=79089595934">Viber</a>
+                </li>
+                <li class="contacts__telegram">
+                    <a class="contacts__telegram--link" href="tg://resolve?number=79089595934">Telegram</a>
+                </li>
+                <li class="contacts__email">
+                    <a class="contacts__email--link" href="julietsapova@gmail.com">julietsapova@gmail.com</a>
+                </li>
+            </ul>
         </footer>
     <script src="js/jquery.min.js"></script>    
     </body>
